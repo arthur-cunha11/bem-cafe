@@ -1,7 +1,7 @@
-export const About = () => {
+export const Snack = () => {
   return (
     <div>
-      <h1>SOBRE</h1>
+      <h1>SALGADOS</h1>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
