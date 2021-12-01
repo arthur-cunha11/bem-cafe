@@ -8,9 +8,8 @@
     }
     
     .banner {
-        img {
-            width: 100%;
-        }
+        background: var(--primary-color);
+        text-align: center;
     }
 
     .info-card__grid {
@@ -30,9 +29,10 @@
         }
     }
 
-    .info-text {
+    .info-section {
         background: #DBD0C0;
         margin: 64px 0;
+        padding: 32px 0;
 
         p {
             color: #2D2424;

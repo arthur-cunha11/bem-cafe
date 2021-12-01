@@ -1,7 +1,8 @@
 import { InfoCard } from "../components/InfoCard";
 import { Instagram } from "../components/Instagram";
 
-import banner from "../images/background.jpg";
+import banner from "../images/banner.jpg";
+import nescafe from "../images/nescafe-logo.png";
 import snacks from "../images/snacks.jpg";
 import drinks from "../images/drinks.jpg";
 
@@ -10,7 +11,7 @@ import "../styles/home.scss";
 export const Home = () => {
   return (
     <main id="home">
-      <section>
+      <section className="banner">
         <img src={banner} alt="Banner de café" />
       </section>
       <div className="container">
@@ -20,9 +21,9 @@ export const Home = () => {
           <InfoCard text="bebidas" image={drinks} />
         </section>
       </div>
-      <section className="info-text">
+      <section className="info-section">
         <div className="container">
-          <img src="" alt="Imagem de informação" />
+          <img src={nescafe} alt="Imagem de informação" />
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
