@@ -1,6 +1,8 @@
+import "../styles/about.scss";
+
 export const About = () => {
   return (
-    <div>
+    <main id="about">
       <h1>SOBRE</h1>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -13,6 +15,6 @@ export const About = () => {
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
       </p>
-    </div>
+    </main>
   );
 };

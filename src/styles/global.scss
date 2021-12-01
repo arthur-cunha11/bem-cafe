@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #2D2424;
+    --secondary-color: #5C3D2E;
+    --tertiary-color: #B85C38;
+    --quaternary-color: #E0C097;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +13,17 @@
 
 body {
     background: #f8f8f8;
-    color: #29292e;
+    color: var(--quaternary-color);
 }
 
-body, input, button {
+body, 
+input, 
+button {
     font: 400 16px 'Roboto', sans-serif;
+}
+
+a, 
+a:visited {
+    color: var(--secondary-color);
+    text-decoration: none;
 }

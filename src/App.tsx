@@ -1,10 +1,9 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import { Home } from "./pages/Home";
-import { Coffe } from "./pages/Coffe";
-import { Snack } from "./pages/Snack";
+import { Drinks } from "./pages/Drinks";
+import { Snacks } from "./pages/Snacks";
 import { About } from "./pages/About";
-import { Contact } from "./pages/Contact";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 
@@ -17,10 +16,9 @@ export const App = () => {
       <Header />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/produtos/cafes" component={Coffe} />
-        <Route path="/produtos/salgados" component={Snack} />
+        <Route path="/produtos/salgados" component={Snacks} />
+        <Route path="/produtos/bebidas" component={Drinks} />
         <Route path="/institucional/sobre" component={About} />
-        <Route path="/contato" component={Contact} />
       </Switch>
       <Footer />
     </BrowserRouter>

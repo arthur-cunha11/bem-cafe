@@ -1,4 +1,4 @@
-export const Coffe = () => {
+export const Drinks = () => {
   return (
     <div>
       <h1>CAFÉS</h1>
