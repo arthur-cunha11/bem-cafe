@@ -1,7 +1,7 @@
 import { InfoCard } from "../components/InfoCard";
 import { Instagram } from "../components/Instagram";
 
-import banner from "../images/banner.jpg";
+import banner from "../images/banner-home.jpg";
 import snacks from "../images/snacks.jpg";
 import drinks from "../images/drinks.jpg";
 

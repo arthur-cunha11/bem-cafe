@@ -1,0 +1,14 @@
+#products {
+    .banner {
+        background: var(--primary-color);
+        text-align: center;
+    }
+
+    h1 {
+        font: 500 32px "Poippins", sans-serif;
+        color: var(--secondary-color);
+        text-align: center;
+        margin: 48px 0;
+        text-transform: uppercase;
+    }
+}
