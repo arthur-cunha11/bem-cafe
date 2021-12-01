@@ -1,6 +1,7 @@
 import whatsapp from "../images/whatsapp.png";
 import facebook from "../images/facebook.png";
 import instagram from "../images/instagram.png";
+import linkedin from "../images/linkedin.png";
 
 import "../styles/footer.scss";
 
@@ -65,7 +66,10 @@ export const Footer = () => {
           rel="noreferrer"
           target="_blank"
         >
-          <p>Desenvolvido por: Arthur Cunha</p>
+          <div>
+            <p>Desenvolvido por: Arthur Cunha</p>
+            <img src={linkedin} alt="Ícone do LinkedIn" />
+          </div>
         </a>
       </section>
     </footer>
