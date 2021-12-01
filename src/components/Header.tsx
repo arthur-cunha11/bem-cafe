@@ -21,9 +21,6 @@ export const Header = () => {
           <li>
             <Link to="/produtos/bebidas">BEBIDAS</Link>
           </li>
-          <li>
-            <Link to="/institucional/sobre">SOBRE</Link>
-          </li>
         </ul>
       </nav>
     </header>

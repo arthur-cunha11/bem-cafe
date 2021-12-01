@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Drinks } from "./pages/Drinks";
 import { Snacks } from "./pages/Snacks";
-import { About } from "./pages/About";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 
@@ -18,7 +17,6 @@ export const App = () => {
         <Route path="/" exact component={Home} />
         <Route path="/produtos/salgados" component={Snacks} />
         <Route path="/produtos/bebidas" component={Drinks} />
-        <Route path="/institucional/sobre" component={About} />
       </Switch>
       <Footer />
     </BrowserRouter>

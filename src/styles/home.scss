@@ -1,7 +1,6 @@
 #home {
     h1 {
-        font-size: 32px;
-        font-weight: 500;
+        font: 500 32px "Poippins", sans-serif;
         color: var(--secondary-color);
         text-align: center;
         margin: 48px 0;
@@ -34,8 +33,15 @@
         margin: 64px 0;
         padding: 32px 0;
 
+        h2,
         p {
             color: #2D2424;
+        }
+
+        h2 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            margin-bottom: 8px;
         }
     }
 }
