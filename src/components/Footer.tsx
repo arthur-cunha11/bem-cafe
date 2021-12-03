@@ -56,6 +56,7 @@ export const Footer = () => {
           <iframe
             title="google-map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229.60604800566998!2d-46.54031510510299!3d-22.96139205543248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6cd32bcd1564464a!2sPosto%20Europa%20II!5e0!3m2!1spt-BR!2sbr!4v1638286662567!5m2!1spt-BR!2sbr"
+            style={{ width: "100%", height: "100%" }}
             loading="lazy"
           />
         </div>

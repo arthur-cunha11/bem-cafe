@@ -7,6 +7,7 @@ export const Instagram = () => {
         scrolling="no"
         allowTransparency={true}
         className="lightwidget-widget"
+        loading="lazy"
         style={{ width: "100%", border: "0", overflow: "hidden" }}
       />
     </section>
