@@ -1,37 +1,78 @@
+import { Link } from "react-router-dom";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
+import logo from "../images/bem-cafe-logo.png";
+
 import "../styles/footer.scss";
 
 export const Footer = () => {
   return (
     <footer>
-      <section className="footer__top">
-        <div className="footer__top__address">
-          <h2>Endereço</h2>
-          <p>Rua Cel. Leme, 499</p>
-          <p>Centro</p>
-          <p>Bragança Paulista</p>
-          <p>São Paulo</p>
-          <p>12900-300</p>
-        </div>
-        <div className="footer__top__map">
-          <iframe
-            title="google-map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229.60604800566998!2d-46.54031510510299!3d-22.96139205543248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6cd32bcd1564464a!2sPosto%20Europa%20II!5e0!3m2!1spt-BR!2sbr!4v1638286662567!5m2!1spt-BR!2sbr"
-            style={{ width: "100%", height: "100%" }}
-            loading="lazy"
-          />
-        </div>
-      </section>
-      <section className="footer__bottom">
-        <a
-          href="https://www.linkedin.com/in/arthur-cunha11/"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <div>
-            <p>Desenvolvido por: Arthur Cunha</p>
+      <div className="container">
+        <section className="footer__top">
+          <div className="footer__top__info">
+            <img src={logo} alt="Logo do Bem Café" />
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries.
+            </p>
           </div>
-        </a>
-      </section>
+          <div className="footer__top__menu">
+            <h2>Menu</h2>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/produtos">Produtos</Link>
+              </li>
+              <li>
+                <Link to="/sobre">Sobre</Link>
+              </li>
+              <li>
+                <Link to="/contato">Contato</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="footer__top__address">
+            <h2>Endereço</h2>
+            <div>
+              <p>Rua Cel. Leme, 499</p>
+              <p>Centro</p>
+              <p>Bragança Paulista</p>
+              <p>São Paulo</p>
+              <p>12900-300</p>
+            </div>
+          </div>
+          <div className="footer__top__business-hours">
+            <h2>Horário de Funcionamento</h2>
+            <div>
+              <p>Segunda a Sexta - 7:30h às 19h</p>
+              <p>Sábado - 8h às 13h</p>
+              <p>Domingo - Fechado</p>
+            </div>
+          </div>
+        </section>
+        <section className="footer__bottom">
+          <a
+            href="https://www.linkedin.com/in/arthur-cunha11/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div>
+              <p>
+                Desenvolvido por: <span>Arthur Cunha</span>
+              </p>
+              <FontAwesomeIcon icon={faLinkedin} />
+            </div>
+          </a>
+        </section>
+      </div>
     </footer>
   );
 };

@@ -4,7 +4,7 @@
             font: 500 32px "Poppins", sans-serif;
             color: var(--secondary-color);
             text-align: center;
-            margin: 48px 0;
+            margin-bottom: 36px;
         }
     }
 
@@ -37,6 +37,30 @@
             font-family: "Poppins", sans-serif;
             font-weight: 500;
             margin-bottom: 8px;
+        }
+
+        .container {
+            div:last-child {
+                margin-top: 32px;
+                width: fit-content;
+
+                p {
+                    width: 100%;
+                }
+
+                strong {
+                    color: var(--primary-color);
+                    font: 500 20px "Poppins", sans-serif;
+                }
+
+                p {
+                    margin-top: 4px;
+                }
+
+                iframe {
+                    margin-top: 8px;
+                }
+            }
         }
     }
 }

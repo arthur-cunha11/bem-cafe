@@ -8,8 +8,22 @@ type InfoCardProps = {
 };
 
 export const InfoCard = ({ text, image }: InfoCardProps) => {
+  const handleClick = () => {
+    let element;
+    const a = document.getElementsByTagName("a");
+
+    for (let i = 0; i < a.length; i++) {
+      a[i].classList.remove("active");
+      if (a[i].text === "PRODUTOS") {
+        element = a[i];
+      }
+    }
+
+    element?.classList.add("active");
+  };
+
   return (
-    <Link to={`/produtos/${text}`}>
+    <Link onClick={handleClick} to={`/produtos/${text}`}>
       <div className="info-card" style={{ background: `url(${image})` }}>
         <p>{text}</p>
       </div>

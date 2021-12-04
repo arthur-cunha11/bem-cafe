@@ -1,65 +1,79 @@
-.footer__top {
+footer {
     background: var(--primary-color);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    padding: 16px 32px;
     margin-top: 32px;
 
-    .footer__top__address {
-        height: 150px
+    .footer__top {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        padding: 32px 0;
+
+        > div:not(div:first-child) {
+            margin-top: 64px;
+        }
+
+        h2 {
+            font: 500 24px "Poppins", sans-serif;
+            margin-bottom: 24px;
+            line-height: 22px;
+        }
+
+        .footer__top__info {
+            img {
+                width: 164px;
+                margin-bottom: 16px;
+            }
+
+            p {
+                width: 75%;
+            }
+        }
+
+        .footer__top__menu {
+            ul {
+                list-style: inherit;
+
+                li {
+                    margin-bottom: 6px;
+    
+                    a {
+                        color: var(--quaternary-color);
+                    }
+                }
+            }
+        }
+
+        p {
+            margin-bottom: 6px;
+        }
     }
-
-    .footer__top__address {
-        align-self: center;
-        grid-column-start: 2;
-    }
-
-    .footer__top__map {
-        grid-column-start: 3;
-        grid-column-end: 5;
-        width: 100%;
-        height: 250px;
-    }
-
-    h2, 
-    p, 
-    a, 
-    a:visited {
-        color: var(--quaternary-color);
-    }
-
-    h2 {
-        font: 500 20px 'Poppins', sans-serif;
-        margin-bottom: 16px;
-    }
-
-    p,
-    li {
-        margin-bottom: 8px;
-    }
-}
-
-.footer__bottom {
-    display: flex;
-    justify-content: center;
-    background: #000;
-
-    a {
-        font-size: 14px;
-        margin: 16px 0;
-    }
-
-    a, 
-    a:visited {
-        color: var(--tertiary-color);
-    }
-
-    div {
+    
+    .footer__bottom {
         display: flex;
-
-        img {
-            margin-left: 8px;
+        justify-content: center;
+        border-top: 1px solid var(--secondary-color);
+    
+        a {
+            font-size: 14px;
+            margin: 16px 0;
+        }
+    
+        a, 
+        a:visited {
+            color: var(--quaternary-color);
+    
+            span,
+            svg {
+                color: var(--tertiary-color);
+            }
+        }
+    
+        div {
+            display: flex;
+            align-items: center;
+    
+            svg {
+                margin-left: 6px;
+            }
         }
     }
 }
