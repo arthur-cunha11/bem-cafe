@@ -5,6 +5,7 @@ import { Products } from "./pages/Products";
 import { ProductItems } from "./pages/ProductItems";
 
 import { Header } from "./components/Header";
+import { SocialFloat } from "./components/SocialFloat";
 import { Footer } from "./components/Footer";
 
 import "./styles/global.scss";
@@ -15,6 +16,7 @@ export const App = () => {
   return (
     <BrowserRouter>
       <Header />
+      <SocialFloat />
       <Switch>
         <Route path="/" exact>
           <Home text={"Bem Café"} />

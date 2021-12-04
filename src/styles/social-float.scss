@@ -1,0 +1,38 @@
+.social-float {
+    position: fixed;
+    right: -194px;
+
+    ul {
+        li {
+            svg {
+                margin-right: 14px;
+            }
+
+            a {
+                display: flex;
+                font: 400 16px "Poppins", sans-serif;
+                align-items: center;
+                color: #fff;
+                transition: all 0.25s ease-in-out;
+                border-radius: 4px;
+                padding: 6px 14px;
+
+                &:hover {
+                    transform: translateX(-194px);
+                }
+        
+                &.whatsapp {
+                    background: #25D366;
+                }
+        
+                &.instagram {
+                    background: #F56040;
+                }
+        
+                &.facebook {
+                    background: #4267B2;
+                }
+            }
+        }
+    }
+}
