@@ -1,5 +1,10 @@
-import bannerSnacks from "../images/banner-home.jpg";
-import bannerDrinks from "../images/banner-home.jpg";
+import { Banner } from "../components/Banner";
+import { InfoCard } from "../components/InfoCard";
+
+import bannerSecondary from "../images/banner-primary.jpg";
+import salgados from "../images/salgados.jpg";
+import doces from "../images/doces.jpg";
+import bebidas from "../images/bebidas.jpg";
 
 import "../styles/products.scss";
 
@@ -8,25 +13,14 @@ type ProductsProps = {
 };
 
 export const Products = ({ text }: ProductsProps) => {
-  const handleImg = (type: string) => {
-    switch (type) {
-      case "salgados":
-        return bannerSnacks;
-      case "bebidas":
-        return bannerDrinks;
-    }
-  };
-
   return (
     <main id="products">
-      <section className="banner">
-        <img src={handleImg(text)} alt="Banner de salgados" />
+      <Banner text={text} image={bannerSecondary} />
+      <section className="info-card__flex">
+        <InfoCard text="salgados" image={salgados} />
+        <InfoCard text="doces" image={doces} />
+        <InfoCard text="bebidas" image={bebidas} />
       </section>
-      <div className="container">
-        <section>
-          <h1>{text}</h1>
-        </section>
-      </div>
     </main>
   );
 };

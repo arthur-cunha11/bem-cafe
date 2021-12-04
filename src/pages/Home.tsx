@@ -1,23 +1,28 @@
+import { Banner } from "../components/Banner";
 import { InfoCard } from "../components/InfoCard";
 import { Instagram } from "../components/Instagram";
 
-import banner from "../images/banner-home.jpg";
-import snacks from "../images/snacks.jpg";
-import drinks from "../images/drinks.jpg";
+import bannerPrimary from "../images/banner-primary.jpg";
+import salgados from "../images/salgados.jpg";
+import doces from "../images/doces.jpg";
+import bebidas from "../images/bebidas.jpg";
 
 import "../styles/home.scss";
 
-export const Home = () => {
+type HomeProps = {
+  text: string;
+};
+
+export const Home = ({ text }: HomeProps) => {
   return (
     <main id="home">
-      <section className="banner">
-        <img src={banner} alt="Banner da home" />
-      </section>
+      <Banner text={text} image={bannerPrimary} />
       <div className="container">
         <h1>CONHEÇA NOSSOS PRODUTOS</h1>
-        <section className="info-card__grid">
-          <InfoCard text="salgados" image={snacks} />
-          <InfoCard text="bebidas" image={drinks} />
+        <section className="info-card__flex">
+          <InfoCard text="salgados" image={salgados} />
+          <InfoCard text="doces" image={doces} />
+          <InfoCard text="bebidas" image={bebidas} />
         </section>
       </div>
       <section className="info-section">

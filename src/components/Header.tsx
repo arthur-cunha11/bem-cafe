@@ -5,6 +5,16 @@ import logo from "../images/bem-cafe-logo.png";
 import "../styles/header.scss";
 
 export const Header = () => {
+  const handleClick = (element: EventTarget) => {
+    const target = element as HTMLTextAreaElement;
+
+    for (let i = 0; i < document.getElementsByTagName("a").length; i++) {
+      document.getElementsByTagName("a")[i].classList.remove("active");
+    }
+
+    target.classList.add("active");
+  };
+
   return (
     <header>
       <Link to="/">
@@ -13,13 +23,24 @@ export const Header = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/">HOME</Link>
+            <Link onClick={(event) => handleClick(event.target)} to="/">
+              HOME
+            </Link>
           </li>
           <li>
-            <Link to="/produtos/salgados">SALGADOS</Link>
+            <Link onClick={(event) => handleClick(event.target)} to="/produtos">
+              PRODUTOS
+            </Link>
           </li>
           <li>
-            <Link to="/produtos/bebidas">BEBIDAS</Link>
+            <Link onClick={(event) => handleClick(event.target)} to="/sobre">
+              SOBRE
+            </Link>
+          </li>
+          <li>
+            <Link onClick={(event) => handleClick(event.target)} to="/contato">
+              CONTATO
+            </Link>
           </li>
         </ul>
       </nav>

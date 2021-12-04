@@ -1,28 +1,23 @@
 #home {
-    h1 {
-        font: 500 32px "Poippins", sans-serif;
-        color: var(--secondary-color);
-        text-align: center;
-        margin: 48px 0;
-    }
-    
-    .banner {
-        background: var(--primary-color);
-        text-align: center;
+    .container {
+        h1 {
+            font: 500 32px "Poppins", sans-serif;
+            color: var(--secondary-color);
+            text-align: center;
+            margin: 48px 0;
+        }
     }
 
-    .info-card__grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .info-card__flex {
+        display: flex;
+        justify-content: center;
 
         a {
             &:first-child {
-                justify-self: end;
                 margin-right: 32px;
             }
 
             &:last-child {
-                justify-self: start;
                 margin-left: 32px;
             }
         }

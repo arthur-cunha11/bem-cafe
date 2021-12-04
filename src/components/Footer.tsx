@@ -1,49 +1,9 @@
-import whatsapp from "../images/whatsapp.png";
-import facebook from "../images/facebook.png";
-import instagram from "../images/instagram.png";
-import linkedin from "../images/linkedin.png";
-
 import "../styles/footer.scss";
 
 export const Footer = () => {
   return (
     <footer>
       <section className="footer__top">
-        <div className="footer__top__contact">
-          <h2>Contato</h2>
-          <ul>
-            <li>
-              <a
-                href="https://wa.me/5511974666798?text=Olá!%20Vim%20pelo%20site%20do%20Bem%20Café%20e%20gostaria%20de%20mais%20informações."
-                rel="noreferrer"
-                target="_blank"
-              >
-                <img src={whatsapp} alt="Ícone do WhatsApp" />
-                WhatsApp
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/bemcafebp/"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <img src={instagram} alt="Ícone do Instagram" />
-                Instagram
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/bemcafebp/"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <img src={facebook} alt="Ícone do Facebook" />
-                Facebook
-              </a>
-            </li>
-          </ul>
-        </div>
         <div className="footer__top__address">
           <h2>Endereço</h2>
           <p>Rua Cel. Leme, 499</p>
@@ -69,7 +29,6 @@ export const Footer = () => {
         >
           <div>
             <p>Desenvolvido por: Arthur Cunha</p>
-            <img src={linkedin} alt="Ícone do LinkedIn" />
           </div>
         </a>
       </section>

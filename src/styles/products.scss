@@ -1,14 +1,17 @@
 #products {
-    .banner {
-        background: var(--primary-color);
-        text-align: center;
-    }
+    .info-card__flex {
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
 
-    h1 {
-        font: 500 32px "Poippins", sans-serif;
-        color: var(--secondary-color);
-        text-align: center;
-        margin: 48px 0;
-        text-transform: uppercase;
+        a {
+            &:first-child {
+                margin-right: 32px;
+            }
+
+            &:last-child {
+                margin-left: 32px;
+            }
+        }
     }
 }

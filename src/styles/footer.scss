@@ -6,22 +6,8 @@
     padding: 16px 32px;
     margin-top: 32px;
 
-    .footer__top__contact,
     .footer__top__address {
         height: 150px
-    }
-
-    .footer__top__contact {
-        align-self: center;
-        grid-column-start: 1;
-
-        a {
-            display: inline-flex;
-        }
-
-        img {
-            margin-right: 6px;
-        }
     }
 
     .footer__top__address {

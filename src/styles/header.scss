@@ -3,7 +3,6 @@ header {
     align-items: center;
     flex-direction: column;
     padding: 16px 0;
-    background: var(--quaternary-color);
 
     img {
         width: 164px;
@@ -28,6 +27,24 @@ header {
 
         a {
             font-size: 18px;
+
+            &.active {
+                &::after {
+                    transform: scaleX(1);
+                }
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                border-bottom: solid 2px var(--secondary-color);  
+                transform: scaleX(0);  
+                transition: transform 300ms ease-in-out;
+            }
+
+            &:hover::after {
+                transform: scaleX(1);
+            }
         }
     }
 }

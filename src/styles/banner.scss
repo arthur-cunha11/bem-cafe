@@ -1,0 +1,11 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    
+    h1 {
+        font: 500 64px "Poppins", sans-serif;
+        color: #fff;
+        align-self: center;
+    }
+}
