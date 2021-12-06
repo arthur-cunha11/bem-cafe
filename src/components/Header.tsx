@@ -1,44 +1,51 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+
+import { underlineTarget, underlineText } from "../utils/UnderlineMenuOptions";
 
 import logo from "../images/bem-cafe-logo.png";
 
 import "../styles/header.scss";
 
 export const Header = () => {
-  const handleClick = (element: EventTarget) => {
-    const target = element as HTMLTextAreaElement;
+  useEffect(() => {
+    const a = document.getElementsByTagName("a");
 
-    for (let i = 0; i < document.getElementsByTagName("a").length; i++) {
-      document.getElementsByTagName("a")[i].classList.remove("active");
+    for (let i = 0; i < a.length; i++) {
+      if (window.location.pathname === "/" && a[i].text === "HOME")
+        a[i].classList.add("active");
+
+      if (
+        window.location.pathname.indexOf(a[i].text.toLocaleLowerCase()) !== -1
+      )
+        a[i].classList.add("active");
     }
-
-    target.classList.add("active");
-  };
+  }, []);
 
   return (
     <header>
-      <Link to="/">
+      <Link onClick={() => underlineText("HOME")} to="/">
         <img src={logo} alt="Logo do Bem Café" />
       </Link>
       <nav>
         <ul>
           <li>
-            <Link onClick={(event) => handleClick(event.target)} to="/">
+            <Link onClick={(event) => underlineTarget(event)} to="/">
               HOME
             </Link>
           </li>
           <li>
-            <Link onClick={(event) => handleClick(event.target)} to="/produtos">
+            <Link onClick={(event) => underlineTarget(event)} to="/produtos">
               PRODUTOS
             </Link>
           </li>
           <li>
-            <Link onClick={(event) => handleClick(event.target)} to="/sobre">
+            <Link onClick={(event) => underlineTarget(event)} to="/sobre">
               SOBRE
             </Link>
           </li>
           <li>
-            <Link onClick={(event) => handleClick(event.target)} to="/contato">
+            <Link onClick={(event) => underlineTarget(event)} to="/contato">
               CONTATO
             </Link>
           </li>
