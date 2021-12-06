@@ -12,15 +12,15 @@ footer {
         }
 
         h2 {
-            font: 500 24px "Poppins", sans-serif;
+            font-size: 24px;
+            line-height: 24px;
             margin-bottom: 24px;
-            line-height: 22px;
         }
 
         .footer__top__info {
             img {
-                width: 164px;
                 margin-bottom: 16px;
+                width: 164px;
             }
 
             p {
@@ -48,9 +48,9 @@ footer {
     }
     
     .footer__bottom {
+        border-top: 1px solid var(--secondary-color);
         display: flex;
         justify-content: center;
-        border-top: 1px solid var(--secondary-color);
     
         a {
             font-size: 14px;
@@ -68,8 +68,8 @@ footer {
         }
     
         div {
-            display: flex;
             align-items: center;
+            display: flex;
     
             svg {
                 margin-left: 6px;

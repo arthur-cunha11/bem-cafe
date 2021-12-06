@@ -9,13 +9,13 @@
             }
 
             a {
+                align-items: center;
+                border-radius: 4px;
+                color: #fff;
                 display: flex;
                 font: 400 16px "Poppins", sans-serif;
-                align-items: center;
-                color: #fff;
-                transition: all 0.25s ease-in-out;
-                border-radius: 4px;
                 padding: 6px 14px;
+                transition: all 0.25s ease-in-out;
 
                 &:hover {
                     transform: translateX(-194px);

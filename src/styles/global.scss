@@ -6,14 +6,32 @@
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     background: #f8f8f8;
     color: var(--quaternary-color);
+}
+
+h1,
+h2 {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+strong {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 body, 
@@ -33,7 +51,7 @@ ul {
 }
 
 .container {
-    width: 100%;
-    max-width: 1140px;
     margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
 }

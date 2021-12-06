@@ -50,7 +50,7 @@ export const Footer = () => {
             </div>
           </div>
           <div className="footer__top__business-hours">
-            <h2>Horário de Funcionamento</h2>
+            <h2>Horário de Atendimento</h2>
             <div>
               <p>Segunda a Sexta - 7:30h às 19h</p>
               <p>Sábado - 8h às 13h</p>

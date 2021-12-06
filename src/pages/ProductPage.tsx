@@ -6,13 +6,13 @@ import salgados from "../images/salgados.jpg";
 import doces from "../images/doces.jpg";
 import bebidas from "../images/bebidas.jpg";
 
-import "../styles/products.scss";
+import "../styles/product-page.scss";
 
-type ProductsProps = {
+type ProductPageProps = {
   text: string;
 };
 
-export const Products = ({ text }: ProductsProps) => {
+export const ProductPage = ({ text }: ProductPageProps) => {
   return (
     <main id="products">
       <Banner text={text} image={bannerSecondary} />

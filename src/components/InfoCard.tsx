@@ -24,7 +24,10 @@ export const InfoCard = ({ text, image }: InfoCardProps) => {
 
   return (
     <Link onClick={handleClick} to={`/produtos/${text}`}>
-      <div className="info-card" style={{ background: `url(${image})` }}>
+      <div
+        className="info-card"
+        style={{ background: `url(${image}) center center / cover no-repeat` }}
+      >
         <p>{text}</p>
       </div>
     </Link>

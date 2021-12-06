@@ -1,23 +1,23 @@
 
 
 .info-card {
+    border-radius: 8px;
+    box-shadow: 0 0 6px #000;
     display: grid;
     grid-template-rows: 1fr 1fr;
     height: 256px;
     width: 256px;
-    border-radius: 8px;
-    box-shadow: 0 0 6px #000;
 
     p {
-        grid-row-start: 2;
         align-self: center;
-        justify-self: center;
-        font: 500 18px "Poppins", sans-serif;
-        color: var(--quaternary-color);
         background: var(--tertiary-color);
-        padding: 8px 48px;
         border-radius: 8px;
-        text-transform: uppercase;
+        color: var(--quaternary-color);
+        font: 500 18px "Poppins", sans-serif;
+        grid-row-start: 2;
+        justify-self: center;
         margin-top: 32px;
+        padding: 8px 48px;
+        text-transform: uppercase;
     }
 }
