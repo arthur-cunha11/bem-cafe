@@ -13,8 +13,6 @@ import { Footer } from "./components/Footer";
 
 import "./styles/global.scss";
 
-import "./services/firebase";
-
 export const App = () => {
   return (
     <BrowserRouter>
