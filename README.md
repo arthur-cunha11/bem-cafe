@@ -1,5 +1,8 @@
 # ☕ Bem Café
 
+- [Facebook](https://www.facebook.com/bemcafebp)
+- [Instagram](https://www.instagram.com/bemcafebp/)
+
 ## 🛠️ Status do projeto
 
 Este projeto ainda está em desenvolvimento.
@@ -10,8 +13,6 @@ Este projeto foi criado com [Create React App](https://github.com/facebook/creat
 
 - Site demonstrativo para a loja de conveniências Bem Café.
 - Este projeto não pertence ao dono do estabelecimento, é apenas para fins de testar conhecimento adquirido.
-- [Bem Café - Facebook](https://www.facebook.com/bemcafebp)
-- [Bem Café - Instagram](https://www.instagram.com/bemcafebp/)
 
 ## 🧪 Feito com
 
