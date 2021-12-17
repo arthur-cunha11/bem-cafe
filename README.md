@@ -25,6 +25,7 @@ Este projeto foi criado com [Create React App](https://github.com/facebook/creat
 
 ```bash
 bem-cafe
+├── node_modules/
 ├── public/
 │   ├── favicon.ico
 │   ├── index.html
