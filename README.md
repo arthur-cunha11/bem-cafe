@@ -1,4 +1,4 @@
-# Bem Café
+# ☕ Bem Café
 
 ## 🛠️ Status do projeto
 
@@ -24,44 +24,52 @@ Este projeto foi criado com [Create React App](https://github.com/facebook/creat
 ## 📁 Estrutura de Arquivos
 
 ```bash
-soft-design-test
+bem-cafe
 ├── public/
 │   ├── favicon.ico
 │   ├── index.html
 ├── src/
 │   ├── components/
-│   │   ├── Book/
-│   │   │   ├── BookList/
-│   │   │   │   └── index.tsx
-│   │   │   ├── BookPage/
-│   │   │   │   └── index.tsx
-│   │   │   ├── BookSearch/
-│   │   │   │   └── index.tsx
-│   │   │   ├── Edit/
-│   │   │   │   └── index.tsx
-│   │   │   └── Register/
-│   │   │   │   └── index.tsx
-│   │   ├── User/
-│   │   │   ├── Login/
-│   │   │   │   └── index.tsx
-│   │   │   ├── Register/
-│   │   │   │   └── index.tsx
-│   │   │   └── UserPage/
-│   │   │   │   └── index.tsx
-│   │   └── index.ts
-│   ├── store/
-│   │   ├── actionCreators.ts
-│   │   ├── actionTypes.ts
-│   │   └── reducer.ts
-│   ├── App.test.tsx
+│   │   ├── Banner.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   ├── InfoCard.tsx
+│   │   ├── Instagram.tsx
+│   │   ├── ScrollToTop.tsx
+│   │   └── SocialFloat.rsx
+│   ├── images/
+│   │   ├── banner-primary.jpg
+│   │   ├── bebidas.jpg
+│   │   ├── bem-cafe-logo-png
+│   │   ├── doces.jpg
+│   │   └── salgados.jpg
+│   ├── pages/
+│   │   ├── About.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Home.tsx
+│   │   ├── ProductItems.tsx
+│   │   └── ProductPage.tsx
+│   ├── services/
+│   │   └── Firebase.ts
+│   ├── styles/
+│   │   ├── about.scss
+│   │   ├── banner.scss
+│   │   ├── contact.scss
+│   │   ├── footer.scss
+│   │   ├── global.scss
+│   │   ├── header.scss
+│   │   ├── home.scss
+│   │   ├── info-card.scss
+│   │   ├── product-items.scss
+│   │   ├── product-page.scss
+│   │   └── social-float.scss
+│   ├── utils/
+│   │   └── UnderlineMenuOptions.ts
 │   ├── App.tsx
-│   ├── db.json
 │   ├── index.tsx
 │   ├── react-app-env.d.ts
-│   ├── reportWebVitals.ts
-│   └── setupTests.ts
+├── .env
 ├── .gitignore
-├── package-lock.json
 ├── package.json
 ├── README.md
 ├── tsconfig.json
