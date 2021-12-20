@@ -1,46 +1,98 @@
-# Getting Started with Create React App
+# ☕ Bem Café
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [Facebook](https://www.facebook.com/bemcafebp)
+- [Instagram](https://www.instagram.com/bemcafebp/)
 
-## Available Scripts
+## 🛠️ Status do projeto
 
-In the project directory, you can run:
+Este projeto ainda está em desenvolvimento.
 
-### `yarn start`
+## 💻 Sobre o projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Este projeto foi criado com [Create React App](https://github.com/facebook/create-react-app).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Site demonstrativo para a loja de conveniências Bem Café.
+- Este projeto não pertence ao dono do estabelecimento, é apenas para fins de testar conhecimento adquirido.
 
-### `yarn test`
+## 🧪 Feito com
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* [React](https://pt-br.reactjs.org/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [React Router Dom](https://v5.reactrouter.com/web/guides/quick-start/)
+* [SASS](https://sass-lang.com/)
+* [Firebase](https://firebase.google.com/)
 
-### `yarn build`
+## 📁 Estrutura de Arquivos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+bem-cafe
+├── node_modules/
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+├── src/
+│   ├── components/
+│   │   ├── Banner.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   ├── InfoCard.tsx
+│   │   ├── Instagram.tsx
+│   │   ├── ScrollToTop.tsx
+│   │   └── SocialFloat.rsx
+│   ├── images/
+│   │   ├── banner-primary.jpg
+│   │   ├── bebidas.jpg
+│   │   ├── bem-cafe-logo-png
+│   │   ├── doces.jpg
+│   │   └── salgados.jpg
+│   ├── pages/
+│   │   ├── About.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Home.tsx
+│   │   ├── ProductItems.tsx
+│   │   └── ProductPage.tsx
+│   ├── services/
+│   │   └── Firebase.ts
+│   ├── styles/
+│   │   ├── about.scss
+│   │   ├── banner.scss
+│   │   ├── contact.scss
+│   │   ├── footer.scss
+│   │   ├── global.scss
+│   │   ├── header.scss
+│   │   ├── home.scss
+│   │   ├── info-card.scss
+│   │   ├── product-items.scss
+│   │   ├── product-page.scss
+│   │   └── social-float.scss
+│   ├── utils/
+│   │   └── UnderlineMenuOptions.ts
+│   ├── App.tsx
+│   ├── index.tsx
+│   ├── react-app-env.d.ts
+├── .env
+├── .gitignore
+├── package.json
+├── README.md
+├── tsconfig.json
+└── yarn.lock
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Execução
 
-### `yarn eject`
+Para instalar todas as dependências necessárias para o funcionamento do projeto, execute o comando:
+```bash 
+yarn
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Execute a aplicação utilizando o comando:
+```bash 
+yarn start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Acesse [http://localhost:3000](http://localhost:3000).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 📝 Desenvolvido por
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+* **Desenvolvedor Front-End**  - [Arthur Cunha](https://github.com/arthur-cunha11)
