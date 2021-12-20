@@ -1,3 +1,5 @@
+import { app } from "../services/firebase";
+
 import { Banner } from "../components/Banner";
 
 import bannerSecondary from "../images/banner-primary.jpg";
@@ -8,10 +10,8 @@ type ProductItemsProps = {
   text: string;
 };
 
-const MONGO_URL = `mongodb+srv://arthurcunha:<${process.env.REACT_APP_PASSWORD}>@bem-cafe.hunem.mongodb.net/bem_cafe?retryWrites=true&w=majority`;
-
 export const ProductItems = ({ text }: ProductItemsProps) => {
-  console.log(MONGO_URL);
+  console.log("teste: ", app);
 
   return (
     <main id="product-items">
