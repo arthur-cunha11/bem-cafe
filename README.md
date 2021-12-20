@@ -70,7 +70,6 @@ bem-cafe
 │   ├── App.tsx
 │   ├── index.tsx
 │   ├── react-app-env.d.ts
-├── .env
 ├── .gitignore
 ├── package.json
 ├── README.md
