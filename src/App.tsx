@@ -33,13 +33,13 @@ export const App = () => {
           <Contact text={"Contato"} />
         </Route>
         <Route path="/produtos/salgados" exact>
-          <ProductItems text={"Salgados"} />
+          <ProductItems type={"Salgados"} />
         </Route>
         <Route path="/produtos/doces" exact>
-          <ProductItems text={"Doces"} />
+          <ProductItems type={"Doces"} />
         </Route>
         <Route path="/produtos/bebidas" exact>
-          <ProductItems text={"Bebidas"} />
+          <ProductItems type={"Bebidas"} />
         </Route>
       </Switch>
       <Footer />
