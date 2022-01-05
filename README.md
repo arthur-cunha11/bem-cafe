@@ -24,7 +24,7 @@ Este projeto foi criado com [Create React App](https://github.com/facebook/creat
 * [Lightwidget](https://lightwidget.com/)
 * [Font Awesome](https://fontawesome.com/)
 
-## 📁 Estrutura de Arquivos
+## 📁 Estrutura de arquivos
 
 ```bash
 bem-cafe
