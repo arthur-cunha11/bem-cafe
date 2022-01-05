@@ -12,7 +12,7 @@ Este projeto ainda está em desenvolvimento.
 Este projeto foi criado com [Create React App](https://github.com/facebook/create-react-app).
 
 - Site demonstrativo para a loja de conveniências Bem Café.
-- Este projeto não pertence ao dono do estabelecimento, é apenas para fins de testar conhecimento adquirido.
+- Este projeto não pertence ao dono do estabelecimento, é apenas para fins de teste de conhecimento.
 
 ## 🧪 Feito com
 
@@ -21,8 +21,10 @@ Este projeto foi criado com [Create React App](https://github.com/facebook/creat
 * [React Router Dom](https://v5.reactrouter.com/web/guides/quick-start/)
 * [SASS](https://sass-lang.com/)
 * [Firebase](https://firebase.google.com/)
+* [Lightwidget](https://lightwidget.com/)
+* [Font Awesome](https://fontawesome.com/)
 
-## 📁 Estrutura de Arquivos
+## 📁 Estrutura de arquivos
 
 ```bash
 bem-cafe
