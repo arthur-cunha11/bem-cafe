@@ -13,12 +13,6 @@ type ProductItemsProps = {
   type: string;
 };
 
-type Products = {
-  bebidas: ProductsInfo;
-  doces: ProductsInfo;
-  salgados: ProductsInfo;
-};
-
 type ProductsInfo = [
   {
     descricao: string;
@@ -28,8 +22,7 @@ type ProductsInfo = [
 ];
 
 export const ProductItems = ({ type }: ProductItemsProps) => {
-  const [products, setProducts] = useState({} as Products);
-  const [productsInfo, setProductsInfo] = useState({} as ProductsInfo);
+  const [products, setProducts] = useState([{}] as ProductsInfo);
 
   // Get a reference to the database service
   const database = getDatabase(app);
@@ -38,32 +31,33 @@ export const ProductItems = ({ type }: ProductItemsProps) => {
   useEffect(() => {
     onValue(databaseProducts, (snapshot) => {
       const data = snapshot.val();
-      setProducts(data);
+
+      switch (type.toLowerCase()) {
+        case "salgados":
+          return setProducts(data?.salgados);
+        case "doces":
+          return setProducts(data?.doces);
+        case "bebidas":
+          return setProducts(data?.bebidas);
+      }
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  useEffect(() => {
-    switch (type.toLowerCase()) {
-      case "salgados":
-        return setProductsInfo(products?.salgados);
-      case "doces":
-        return setProductsInfo(products?.doces);
-      case "bebidas":
-        return setProductsInfo(products?.bebidas);
-    }
-  }, [products, type]);
 
   return (
     <main id="product-items">
       <Banner text={type} image={bannerSecondary} />
       <div className="container">
         <section>
-          <div>
-            <img src={productsInfo?.[0]?.imagem} alt="Imagem do produto" />
-            <h2>{productsInfo?.[0]?.nome}</h2>
-            <p>{productsInfo?.[0]?.descricao}</p>
-          </div>
+          {products?.map((element, id) => {
+            return (
+              <div key={id}>
+                <img src={element?.imagem} alt="Imagem do produto" />
+                <h2>{element?.nome}</h2>
+                <p>{element?.descricao}</p>
+              </div>
+            );
+          })}
         </section>
       </div>
     </main>

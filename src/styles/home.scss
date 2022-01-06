@@ -39,9 +39,19 @@
         }
 
         .container {
-            div:last-child {
+            .info-section__bottom {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
                 margin-top: 32px;
-                width: fit-content;
+
+                .info-section__address {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .info-section__business-hours {
+                    margin: 0 auto;
+                }
 
                 p {
                     width: 100%;

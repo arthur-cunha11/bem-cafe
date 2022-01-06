@@ -7,14 +7,33 @@
             text-align: center;
             text-transform: uppercase;
         }
-    }
 
-    section {
-        display: flex;
-        margin-top: 32px;
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            margin-top: 16px;
+    
+            div {
+                margin-top: 16px;
+                padding: 24px;
+                text-align: center;
+                width: fit-content;
 
-        div {
-            border: 1px solid green;
+                img {
+                    border-radius: 8px;
+                }
+    
+                h2 {
+                    color: var(--primary-color);
+                    margin-bottom: 8px;
+                    margin-top: 16px;
+                }
+    
+                p {
+                    color: var(--secondary-color);
+                }
+            }
         }
     }
 }
