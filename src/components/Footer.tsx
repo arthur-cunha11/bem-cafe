@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import { underlineText } from "../utils/UnderlineMenuOptions";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -26,16 +28,24 @@ export const Footer = () => {
             <h2>Menu</h2>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link onClick={() => underlineText("HOME")} to="/">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/produtos">Produtos</Link>
+                <Link onClick={() => underlineText("PRODUTOS")} to="/produtos">
+                  Produtos
+                </Link>
               </li>
               <li>
-                <Link to="/sobre">Sobre</Link>
+                <Link onClick={() => underlineText("SOBRE")} to="/sobre">
+                  Sobre
+                </Link>
               </li>
               <li>
-                <Link to="/contato">Contato</Link>
+                <Link onClick={() => underlineText("CONTATO")} to="/contato">
+                  Contato
+                </Link>
               </li>
             </ul>
           </div>
