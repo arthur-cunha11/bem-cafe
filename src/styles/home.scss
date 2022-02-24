@@ -29,6 +29,10 @@
         margin: 64px 0;
         padding: 32px 0;
 
+        @media screen and (max-width: 1024px) {
+            padding: 32px 16px;
+        }
+
         h2,
         p {
             color: #2D2424;
@@ -69,6 +73,14 @@
                 iframe {
                     margin-top: 8px;
                 }
+            }
+        }
+    }
+
+    .instagram {
+        section {
+            @media screen and (max-width: 1024px) {
+                padding: 0 32px;
             }
         }
     }
